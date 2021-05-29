@@ -1,0 +1,19 @@
+ext{
+    versions = [
+            lombok      : "1.18.20",
+            postgresql  : "42.2.20",
+            swagger     : "2.9.2",
+            mapstruct   : "1.4.0.Final",
+    ]
+    libs = [
+            lombok      : "org.projectlombok:lombok:$versions.lombok",
+            postgresql  : "org.postgresql:postgresql:$versions.postgresql",
+            springJpa   : "org.springframework.boot:spring-boot-starter-data-jpa",
+            springthymeleaf : "org.springframework.boot:spring-boot-starter-thymeleaf",
+            springWeb   : "org.springframework.boot:spring-boot-starter-web",
+            swagger     : "io.springfox:springfox-swagger2:$versions.swagger",
+            swaggerui   : "io.springfox:springfox-swagger-ui:$versions.swagger",
+            mapstruct   : "org.mapstruct:mapstruct:$versions.mapstruct",
+            mapstructProcessor: "org.mapstruct:mapstruct-processor:$versions.mapstruct",
+    ]
+}
