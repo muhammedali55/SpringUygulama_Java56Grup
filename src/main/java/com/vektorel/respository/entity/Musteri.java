@@ -39,6 +39,7 @@ public class Musteri {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     long id;
+
     String aciklama;
     String ad;
     String adres;

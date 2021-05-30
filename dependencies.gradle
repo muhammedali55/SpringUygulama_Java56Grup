@@ -4,6 +4,7 @@ ext{
             postgresql  : "42.2.20",
             swagger     : "2.9.2",
             mapstruct   : "1.4.0.Final",
+            javaxvalidation : "2.0.1.Final"
     ]
     libs = [
             lombok      : "org.projectlombok:lombok:$versions.lombok",
@@ -15,5 +16,6 @@ ext{
             swaggerui   : "io.springfox:springfox-swagger-ui:$versions.swagger",
             mapstruct   : "org.mapstruct:mapstruct:$versions.mapstruct",
             mapstructProcessor: "org.mapstruct:mapstruct-processor:$versions.mapstruct",
+            javaxvalidation: "javax.validation:validation-api:$versions.javaxvalidation"
     ]
 }

@@ -6,6 +6,7 @@ package com.vektorel.controllers;
 // Bu sınıfa URL ile kullanıcıların ulaşabilmesi içni
 // @RequestMapping annotasyonu eklenir ve yol belirlenir.
 import com.vektorel.dto.request.SaveMusteriRequestDto;
+import com.vektorel.exceptions.ExampleManagerException;
 import com.vektorel.mapper.MusteriMapper;
 import com.vektorel.respository.entity.Musteri;
 import com.vektorel.services.MusteriService;
@@ -43,7 +44,8 @@ public class MusteriController {
     }
 
     @PostMapping("/resimyukle")
-    public String resimyukle(MultipartFile file){
+    public String resimyukle(MultipartFile file) throws ExampleManagerException
+    {
         return "yüklendi";
     }
 
