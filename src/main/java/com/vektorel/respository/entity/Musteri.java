@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Data
 @Builder
@@ -13,7 +14,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Table(name = "tblmusteri")
 @Entity
-public class Musteri {
+public class Musteri implements Serializable {
     // Lombok Project
     // bir pojo içinde get,set paraetleri kullanılır. ve bu iş zahmetlidir.
     // lombok get,set,constructor gibi bileşenleri otomatik ekler

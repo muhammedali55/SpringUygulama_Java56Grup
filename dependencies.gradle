@@ -4,8 +4,10 @@ ext{
             postgresql  : "42.2.20",
             swagger     : "2.9.2",
             mapstruct   : "1.4.0.Final",
-            javaxvalidation : "2.0.1.Final"
+            javaxvalidation : "2.0.1.Final",
+            jedis       : "3.6.0",
     ]
+
     libs = [
             lombok      : "org.projectlombok:lombok:$versions.lombok",
             postgresql  : "org.postgresql:postgresql:$versions.postgresql",
@@ -16,6 +18,11 @@ ext{
             swaggerui   : "io.springfox:springfox-swagger-ui:$versions.swagger",
             mapstruct   : "org.mapstruct:mapstruct:$versions.mapstruct",
             mapstructProcessor: "org.mapstruct:mapstruct-processor:$versions.mapstruct",
-            javaxvalidation: "javax.validation:validation-api:$versions.javaxvalidation"
+            javaxvalidation: "javax.validation:validation-api:$versions.javaxvalidation",
+            springMongodb: "org.springframework.boot:spring-boot-starter-data-mongodb",
+            springRedis  : "org.springframework.boot:spring-boot-starter-data-redis",
+            jedis        : "redis.clients:jedis:$versions.jedis"
+
+
     ]
 }

@@ -5,6 +5,7 @@ import com.vektorel.mapper.MusteriMapper;
 import com.vektorel.respository.MusteriRepository;
 import com.vektorel.respository.entity.Musteri;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -36,8 +37,9 @@ public class MusteriService {
     public void delete(Musteri mst){
         repository.delete(mst);
     }
-    public List<Musteri> getAll(){
 
+    @Cacheable(cacheNames = "postgresqlGetAll")
+    public List<Musteri> getAll(){
         return repository.findAll();
     }
 

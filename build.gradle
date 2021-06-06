@@ -32,7 +32,9 @@ dependencies {
 	implementation libs.swagger
 	implementation libs.swaggerui
 	implementation libs.javaxvalidation
-
+	implementation libs.springMongodb
+	implementation libs.springRedis
+	implementation libs.jedis
 
 	//implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	//implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'

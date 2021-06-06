@@ -2,10 +2,14 @@ server:
   port: 9090
 
 spring:
+  data:
+    mongodb:
+      database: dbmusteri
+      uri: mongodb://localhost:55000
   datasource:
     platform: postgresql
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:1511/DBMusteriHN
+    url: jdbc:postgresql://localhost:1511/dbmusteri
     username: postgres
     password: root
   jpa:

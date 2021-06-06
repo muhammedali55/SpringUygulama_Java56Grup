@@ -19,5 +19,5 @@ public interface MusteriRepository extends JpaRepository<Musteri,Long> {
 
     }
     */
-    List<Musteri> findAllByAdAndBySoyad(String Ad, String Soyad);
+//    List<Musteri> findAllByAdAndBySoyad(String Ad, String Soyad);
 }
