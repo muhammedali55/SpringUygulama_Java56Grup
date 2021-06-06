@@ -37,7 +37,9 @@ public class MusteriService {
         repository.delete(mst);
     }
     public List<Musteri> getAll(){
+
         return repository.findAll();
     }
+
 
 }

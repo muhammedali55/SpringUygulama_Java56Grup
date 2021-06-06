@@ -16,4 +16,5 @@ public class SaveMusteriRequestDto implements Serializable {
     String soyad;
     @Max(value = 140, message = "Kişi yaşını 140 tan fazla giremezsiniz")
     Integer yas;
+    String musteritel;
 }
